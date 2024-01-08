@@ -12,7 +12,7 @@ Commands:-
 
 
 Shell Operators
-1. & -> runs commands in background of terminal
+1. ``&`` -> runs commands in background of terminal
 2. && -> combines multiple commands together in one line.
-3. > -> redirector; direct the output of one command to another command.
-4. >> -> same as redirector except that the output is appended instead of replacing the output of the other command.
+3. ``>`` -> redirector; direct the output of one command to another command.
+4. ``>>`` -> same as redirector except that the output is appended instead of replacing the output of the other command.
