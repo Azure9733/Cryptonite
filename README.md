@@ -6,7 +6,7 @@ Phase 1:
 Phase 2:
 - PicoCTF
 - TryHackMe Advent of Cyber
-- NiteCTF
+- NiteCTF  
 JM:
 - KnightCTF
 - DiceCTF
