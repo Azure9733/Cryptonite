@@ -8,7 +8,7 @@ Note: This challenge is composed of 3 flags.
 2. a black popup is probably some commands being executed in the command like.
 3. since she was trying to draw something, its probably ms paint or some other canvas editor.
 
-## Recon
+## Initial Info
 ![image](https://github.com/Azure9733/Cryptonite/assets/143328010/b2a90dcd-29e4-4f30-94d2-e314624408d4)  
 ```
 root@a0a6c5d849e3:/mnt/documents/memlabs/lab1# volatility -f MemoryDump_Lab1.raw --profile=Win7SP1x64 pslist
@@ -96,5 +96,23 @@ Processes can be classiefied into:
   4. mspaint.exe (Microsoft Paint)
   5. WinRAR.exe (WinRAR)
   6. DumpIt.exe (Memory Acquisition Tool)
- 
-- 
+- Clearly, I will focus on cmd.exe, mspaint.exe and WinRAR.exe.
+ ## Solution
+ ![image](https://github.com/Azure9733/Cryptonite/assets/143328010/c38fee93-e8a4-4f81-8eec-5e11f8099d9e)  
+St4G3$1 is a weird command. Checking its Pid: 2692
+![image](https://github.com/Azure9733/Cryptonite/assets/143328010/a2483019-1718-451b-b0e1-116efae0b78c)  
+``ZmxhZ3t0aDFzXzFzX3RoM18xc3Rfc3Q0ZzMhIX0=`` is base64 output
+decoded: ``'flag{th1s_1s_th3_1st_st4g3!!}'`` 
+Next is mspaint.  
+I do memdump on the ms paint process.  
+To extract images from raw data, the following blog was referred.  
+https://w00tsec.blogspot.com/2015/02/extracting-raw-pictures-from-memory.html  
+![image](https://github.com/Azure9733/Cryptonite/assets/143328010/31c8a6cb-2686-418d-ae13-c87d45aaf498)  
+``flag{G00d_BoY_good_girL}``
+![image](https://github.com/Azure9733/Cryptonite/assets/143328010/c145bbe7-5439-4306-a4a7-eeb9f6cb6ea7)  
+Important.rar must be the important files.  
+![image](https://github.com/Azure9733/Cryptonite/assets/143328010/897f0777-d475-4210-870e-fa70b219f3db)  
+![image](https://github.com/Azure9733/Cryptonite/assets/143328010/a047eea7-b3ac-4f34-9604-70138184333d) 
+![image](https://github.com/Azure9733/Cryptonite/assets/143328010/b5a27164-adb7-4f2b-af9a-c56e3ff3e6ae)  
+``F4FF64C8BAAC57D22F22EDC681055BA6``
+![image](https://github.com/Azure9733/Cryptonite/assets/143328010/146cb8ba-767e-4dc3-9d50-ebad72346070)  
