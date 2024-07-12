@@ -93,7 +93,6 @@ You need to change the bind address to your host ip address
 - ``ifconfig`` since i am using a vm, my host ip is the one in ethernet.
   - Check if the ip is active by ``ping 192.168.XX.XXX``  
 ![333867081-993fea0d-4b8a-4004-b72b-21e7e82ca5f7](https://github.com/user-attachments/assets/cb368b30-4ba4-4d2a-aee9-bcac73520e4b)  
-  - ``sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf``
+  - ``sudo vim /etc/mysql/mariadb.conf.d/50-server.cnf``   
 ![333867149-bced78e5-8ef0-464b-9c32-0f876bd59a16](https://github.com/user-attachments/assets/ff810450-6891-4459-99a5-79212f30326d)  
- 
 Now just `sudo docker compose up`
