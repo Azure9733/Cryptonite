@@ -11,7 +11,7 @@ Install Docker and `docker compose` (this may vary in difficulty based on your l
 https://docs.docker.com/engine/install/debian/#install-using-the-repository  
 follow the commands provided in the `Install using the apt repository` inside the above blog.  
 IF after running `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin` you get the following error:  
-![image](https://github.com/Azure9733/nitectf_infra_training_2024/assets/143328010/792575c7-aad2-4fe9-89ca-317a261eae0f)  
+![333837948-792575c7-aad2-4fe9-89ca-317a261eae0f](https://github.com/user-attachments/assets/222f16ad-f662-4c96-b7bd-f14472df4b51)   
 follow the following commands:  
 1. `DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}`
 2. `DOCKER_CONFIG=${DOCKER_CONFIG:-/usr/local/lib/docker}`
@@ -20,16 +20,16 @@ follow the following commands:
 5. `chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose`  
 `docker compose version`
 6. `cd $DOCKER_CONFIG`  
-![image](https://github.com/Azure9733/nitectf_infra_training_2024/assets/143328010/4279672d-ab76-4524-b3af-a5991e138448)  
+![333839018-4279672d-ab76-4524-b3af-a5991e138448](https://github.com/user-attachments/assets/3a41396d-bfbe-471e-9d6c-0f334cd4c509)  
 7. `sudo mkdir -p /usr/local/lib/docker/cli-plugins`
 8. `curl -SL https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose`
 9. `sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose`
 10. `sudo docker compose version`  
-![image](https://github.com/Azure9733/nitectf_infra_training_2024/assets/143328010/cd5a8523-1634-426c-aa87-b9d728ca3f1d)
+![333839314-cd5a8523-1634-426c-aa87-b9d728ca3f1d](https://github.com/user-attachments/assets/9112c3f2-8bc8-4fb8-ace1-cf14b30d6130)  
 11. `cd CTFd`
 12. `sudo docker compose up` (it should start building)
 - verify by running this if you want:`sudo docker run hello-world`  
-![image](https://github.com/Azure9733/nitectf_infra_training_2024/assets/143328010/44376e27-e19f-4579-8ac3-6f3675d4639d)  
+![333837727-44376e27-e19f-4579-8ac3-6f3675d4639d](https://github.com/user-attachments/assets/b168cad0-8d17-461f-b542-d922fd7a0975)  
 - Install docker compose not docker-compose (delete that shit).  
   `sudo apt remove docker-compose`
 
